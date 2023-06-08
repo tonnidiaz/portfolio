@@ -13,7 +13,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
     </div>
-    <a href="/" class="navbar-brand fw-7 fs-30"
+    <a href="/" class="navbar-brand fw-7 fs-25"
       >THABISO</a
     >
     <div id="navbarNav" class="collapse navbar-collapse">
@@ -27,7 +27,12 @@
         </li>
       </ul>
     </div>
-    
+    <div class="">
+  
+      <a  href="#contact" class="color-white-2">
+        <i class="material-icons">phone_iphone</i>
+      </a>
+    </div>
   </nav>   
     </header>
   

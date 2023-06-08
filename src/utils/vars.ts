@@ -68,31 +68,50 @@ export const personalInfo = {
     },
     {
       name: "Flutter",
-      level: 60
+      level: 60,
     },
     {
       name: "Java",
-      level: 50
+      level: 50,
     },
     {
       name: "Kotlin",
-      level: 60
+      level: 60,
     },
- {
+    {
       name: "APIs",
-      level: 80
+      level: 80,
     },
     {
       name: "HTML",
-      level: 95
+      level: 95,
     },
     {
       name: "CSS",
-      level: 95
-    },{
-      name: "SCSS",
-      level: 90
+      level: 95,
     },
-   
+    {
+      name: "SCSS",
+      level: 90,
+    },
+  ],
+  projects: [
+    {
+
+      name: "Tunedaudio",
+      description:
+        "A beat selling platform built with Nuxt.JS. Artists and Producers can upload their tracks, set the price and share with their audience. With SECURE payments made possible by the PayPal SDK. ",
+      links: ["https://tunedaudio.vercel.app",],
+      img: "/assets/imgs/tunedstreamz/movie_page.PNG"
+    },
+    {
+      name: "Tunedstreamz",
+      description:
+        "An online free movie-streaming site built with Nuxt.JS. Uses the IMDB API to get information about movies and tv shows.",
+      links: [
+        "https://www.tunedstreamz.cc",
+      ],
+      img: "/assets/imgs/tunedstreamz/home.PNG"
+    },
   ],
 };

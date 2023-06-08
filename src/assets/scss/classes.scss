@@ -1,9 +1,23 @@
 @import "./colors";
 @import "./vars";
 
+
+.link{
+  text-decoration: none !important;
+  color: rgb(199, 199, 199) !important;
+  &:hover, &:focus{
+    color: $color-orange !important;
+  }
+}
 .border-orange {
   border-width: 2px;
   border-color: $color-orange !important;
+}
+.color-white-2 {
+  color: $color-white-2 !important;
+}
+.color-white {
+  color: white !important;
 }
 .main {
   min-height: 100vh;

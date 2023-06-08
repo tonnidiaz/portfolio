@@ -21,6 +21,15 @@
             </div>
           </div>
         </div>
+        <div id="projects" class="my-10 m-auto w-100p">
+          <h1 class="header-txt fs-35 ta-c">PROJECTS</h1>
+          <div class="mt-20 row">
+            <div v-for="(it, i) in personalInfo.projects" class="col col-md-6  pd-10">
+               <ProjectCard :img="it.img" :name="it.name" :description="it.description" :links="it.links" />
+            </div>
+           
+          </div>
+        </div>
         </div>
        
       </div>
@@ -37,4 +46,5 @@ import Services from "./components/Services.vue";
 import SkillBar from "./components/SkillBar.vue";
 import { personalInfo } from "./utils/vars";
 import Header from "./components/Header.vue";
+import ProjectCard from "./components/ProjectCard.vue";
 </script>
