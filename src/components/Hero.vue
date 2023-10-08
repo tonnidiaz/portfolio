@@ -15,9 +15,7 @@
             <div>
                 <h1 class="text-5xl font-bold text-center md:text-left">Fullstack developer</h1>
                 <p class="py-6 text-center md:text-left">
-                    Provident cupiditate voluptatem et in. Quaerat fugiat ut
-                    assumenda excepturi exercitationem quasi. In deleniti eaque
-                    aut repudiandae et a id nisi.
+                    Hi, I'm Thabiso Koza. A dedicated and passionate web and mobile app developer
                 </p>
             </div>
             </div>
