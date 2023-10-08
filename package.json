@@ -11,6 +11,8 @@
   },
   "dependencies": {
     "@flaticon/flaticon-uicons": "^2.4.0",
+    "flowbite": "^1.8.1",
+    "flowbite-vue": "^0.0.17-next.13",
     "vue": "^3.3.4"
   },
   "devDependencies": {

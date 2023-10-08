@@ -1,11 +1,9 @@
 <template>
-    <section class="sec" id="skills">
-        <h2 class="_title">Skills & Experience</h2>
-        <div class="my-10">
-            <p class="text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime, animi? Veniam ab, magnam alias natus, ratione, eos recusandae maxime quos deserunt blanditiis id sit eligendi! Libero veritatis suscipit molestias nobis?</p>
-        </div>
+    <section class="sec mt-10 mb-0" id="skills">
+        <h2 class="_title text-3xl">Stacks</h2>
+
         <div class="mt-10 flex flex-wrap gap-4 flex-wrap skills items-center justify-center">
-            <div v-for="skill in skills" class="bg-card relative p-2 skill-card rounded-none shadow-xl p- flex flex-col items-center justify-center gap-2">
+            <div v-for="skill in skills" class="bg-car relative p-2 skill-card rounded-none shadow-sm p- flex flex-col items-center justify-center gap-2">
                 <div>
                      <img :src="skill.svg" alt="skill" class="w-full">
                 </div>

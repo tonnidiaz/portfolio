@@ -1,10 +1,17 @@
 <template>
-    <div class="hero min-h-">
-        <div class="hero-content flex-col lg:flex-row _content">
-            <img alt="hero"
-                src="/imgs/tonics.jpg"
-                class="max-w-sm w-full rounded-lg shadow-2xl"
-            />
+    <div class="hero min-h-screen">
+        <div class="hero-content flex-col _content relative" >
+            <div class="w-60p flex gap-10 flex-col lg:flex-row items-center">
+                 <div class="avatar">
+                <div class="rounded-full w-40 h-40 bg-primary" >
+                    <img
+                        alt="hero"
+                        src="/imgs/tonics.jpg"
+                        class="max-w-sm w-full rounded-lg shadow-2xl"
+                    />
+                </div>
+            </div>
+
             <div>
                 <h1 class="text-5xl font-bold">Fullstack developer</h1>
                 <p class="py-6">
@@ -12,8 +19,14 @@
                     assumenda excepturi exercitationem quasi. In deleniti eaque
                     aut repudiandae et a id nisi.
                 </p>
-                <a href="#contact" class="btn btn-primary">Hire me</a>
             </div>
+            </div>
+            <SkillsSection/>
         </div>
+       
     </div>
 </template>
+<script setup lang="ts">
+import SkillsSection from "@/components/SkillsSection.vue";
+
+</script>
