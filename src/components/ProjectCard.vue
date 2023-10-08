@@ -102,11 +102,10 @@ const fullScreen = ref(false);
 
 const props = defineProps<{
     pr: Project;
-    index: Number;
+    index: number;
 }>();
 
 const toggleFullscreen = () => {
     fullScreen.value = true;
-    $(`#pr-${props.index}-img-modal`)[0].showModal();
 };
 </script>
