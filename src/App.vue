@@ -73,5 +73,7 @@ main{
     background-color: rgb(245, 245, 245);
 }
 
-
+.m-auto{
+    margin: 0 auto;
+}
 </style>

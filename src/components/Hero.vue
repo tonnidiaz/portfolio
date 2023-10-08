@@ -1,7 +1,7 @@
 <template>
     <div class="hero min-h-screen">
         <div class="hero-content flex-col _content relative" >
-            <div class="w-60p flex gap-10 flex-col lg:flex-row items-center">
+            <div class="w-60p flex gap-10 flex-col md:flex-row items-center m-auto">
                  <div class="avatar">
                 <div class="rounded-full w-40 h-40 bg-primary" >
                     <img

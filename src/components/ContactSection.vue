@@ -23,8 +23,7 @@
             </div>
         </div>
 
-        <Button color="default">Default</Button>
-<Carousel/>
+
         </div>
        </section>
 </template>
