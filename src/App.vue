@@ -23,11 +23,7 @@ main{
     margin-top: 10rem;
 }
 
-@media (max-width: 768px){
-    main{
-        margin-top: 4rem;
-    }
-}
+
  .navbar{
     //background-color: #181818 !important;
    // background-color: $color-card !important;
@@ -49,6 +45,28 @@ main{
 
  .sec{
     @apply flex flex-col justify-center md:px-10 px-4 md:my-40 my-20;
+
+    ._title{
+        @apply md:text-5xl text-3xl font-bold text-center;
+    }
  }
+ 
+ 
+    .skill-card{
+        width: 65px;
+ }
+@media (max-width: 768px){
+    main{
+        margin-top: 4rem;
+    }
+
+}
+@media (min-width: 768px){
+
+    .skill-card{
+        width: 100px;
+ }
+}
+
 </style>
  

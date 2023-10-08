@@ -1,6 +1,6 @@
 <template>
     <section id="portfolio" class="my-50px sec">
-        <h2 class="text-5xl font-bold text-center">Portfolio & Projects</h2>
+        <h2 class="_title">Portfolio & Projects</h2>
         <div class="my-10">
             <p class="text-center">Here are some of the finished projects I have worked on.</p>
         </div>

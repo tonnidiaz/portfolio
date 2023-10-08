@@ -1,15 +1,15 @@
 <template>
     <section class="sec" id="skills">
-        <h2 class="text-5xl font-bold text-center">Skills & Experience</h2>
+        <h2 class="_title">Skills & Experience</h2>
         <div class="my-10">
             <p class="text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime, animi? Veniam ab, magnam alias natus, ratione, eos recusandae maxime quos deserunt blanditiis id sit eligendi! Libero veritatis suscipit molestias nobis?</p>
         </div>
-        <div class="mt-10 flex gap-4 flex-wrap skills items-center justify-center">
-            <div v-for="skill in skills" class="bg-base-100 rounded-md shadow-xl p- flex flex-col items-center ">
+        <div class="mt-10 flex flex-wrap gap-4 flex-wrap skills items-center justify-center">
+            <div v-for="skill in skills" class="bg-card relative p-2 skill-card rounded-none shadow-xl p- flex flex-col items-center justify-center gap-2">
                 <div>
-                     <img :src="skill.svg" alt="skill" width="70">
+                     <img :src="skill.svg" alt="skill" class="w-full">
                 </div>
-                <h5>{{skill.name}}</h5>
+                <h5 class="fs-12 text-center">{{skill.name}}</h5>
             </div>
         </div>
     </section>

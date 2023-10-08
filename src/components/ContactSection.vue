@@ -1,20 +1,20 @@
 <template>
     <section class="sec" id="contact">
-        <h2 class="text-5xl font-bold text-center">Get in touch</h2>
+        <h2 class="_title">Get in touch</h2>
         <div class="my-5">
-            <div class="flex fs-20 items-center justify-center gap-3">
+            <div class="flex contact items-center justify-center gap-3">
                 <span class="mt-2">
                     <i class="fi fi-br-envelope"></i>
                 </span>
                 <span>{{ contactDetails.email }}</span>
             </div>
-            <div class="flex fs-20 items-center justify-center gap-3">
+            <div class="flex contact items-center justify-center gap-3">
                 <span class="mt-2">
                     <i class="fi fi-br-envelope"></i>
                 </span>
                 <span>{{ contactDetails.email2 }}</span>
             </div>
-            <div class="flex fs-20 items-center justify-center gap-3">
+            <div class="flex contact items-center justify-center gap-3">
                 <span class="mt-2">
                     <i class="fi fi-br-mobile-notch"></i>
                 </span>
