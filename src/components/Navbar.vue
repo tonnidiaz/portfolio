@@ -2,8 +2,8 @@
 <template>
     <Navbar solid class="fixed w-full left-0 z-[100] top-0">
       <template #logo>
-        <NavbarLogo link="https://www.google.com/" alt="Flowbite logo" image-url="https://flowbite.com/docs/images/logo.svg">
-          Portfolio
+        <NavbarLogo link="/" alt="">
+          Thabiso
         </NavbarLogo>
       </template>
       <template #default="{isShowMenu}">
