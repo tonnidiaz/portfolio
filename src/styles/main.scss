@@ -1,0 +1,66 @@
+@import './colors';
+@import './classes';
+@import "@flaticon/flaticon-uicons/css/all/all";
+
+/* Poppins */
+@font-face {
+    font-family: Poppins;
+    src: url("/fonts/Poppins/Poppins-Regular.ttf");
+    //font-weight: normal;
+
+  }
+  
+  @font-face {
+    font-family: Poppins;
+    src: url("/fonts/Poppins/Poppins-Medium.ttf");
+    font-weight: 500;
+  }
+  
+  @font-face {
+    font-family: Poppins;
+    src: url("/fonts/Poppins/Poppins-SemiBold.ttf");
+    font-weight: 600;
+  }
+  @font-face {
+    font-family: Poppins;
+    src: url("/fonts/Poppins/Poppins-Bold.ttf");
+    font-weight: bold;
+  }
+  @font-face {
+    font-family: Poppins;
+    src: url("/fonts/Poppins/Poppins-ExtraBold.ttf");
+    font-weight: bolder;
+  }
+
+  /* INCLUSIVE SANS */
+  @font-face {
+    font-family: InclusiveSans;
+    src: url("/fonts/InclusiveSans/InclusiveSans-Regular.ttf");
+  }
+
+body, html{
+    font-family: InclusiveSans, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',;
+    font-weight: 500;
+    scroll-behavior: smooth !important;
+    overflow-x: hidden;
+    &::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        //background-color: #6666;
+        height: 2px !important;
+        width: 2px !important;
+    }
+    &::-webkit-scrollbar {
+        width: 4px;
+        height: 4px;
+        //background-color: #6666;
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: hsl(var(--p) / var(--tw-bg-opacity));
+    }
+}
+  @for $i from 1 to 7{
+    h#{$i}{
+        font-family: Poppins,system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: white;
+    }
+  }
