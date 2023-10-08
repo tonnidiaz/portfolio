@@ -26,7 +26,7 @@
         height: #{$i}#{"%"} !important;
     }
     .w-#{$i}p {
-        width: #{$i}#{"%"} !important;
+        width: #{$i}#{"%"};
     }
     .min-h-#{$i}p {
         min-height: #{$i}#{"%"} !important;

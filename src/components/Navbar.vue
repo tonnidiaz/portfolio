@@ -1,8 +1,6 @@
-<script setup>
-import { Navbar, NavbarLogo, NavbarCollapse, NavbarLink } from 'flowbite-vue'
-</script>
+
 <template>
-    <Navbar>
+    <Navbar solid class="fixed w-full left-0 z-[100] top-0">
       <template #logo>
         <NavbarLogo link="https://www.google.com/" alt="Flowbite logo" image-url="https://flowbite.com/docs/images/logo.svg">
           Portfolio
@@ -11,10 +9,13 @@ import { Navbar, NavbarLogo, NavbarCollapse, NavbarLink } from 'flowbite-vue'
       <template #default="{isShowMenu}">
         <NavbarCollapse :isShowMenu="isShowMenu">
           <NavbarLink isActive link="#">Home</NavbarLink>
-          <NavbarLink link="#">Services</NavbarLink>
-          <NavbarLink link="#">Pricing</NavbarLink>
-          <NavbarLink link="#">Contact</NavbarLink>
+          <NavbarLink link="#about">About</NavbarLink>
+          <NavbarLink link="#portfolio">Portfolio</NavbarLink>
+          <NavbarLink link="#contact">Contact</NavbarLink>
         </NavbarCollapse>
       </template>
     </Navbar>
 </template>
+<script setup lang="ts">
+import { Navbar, NavbarLogo, NavbarCollapse, NavbarLink } from 'flowbite-vue'
+</script>

@@ -7,29 +7,10 @@
         </div>
         <div class="flex flex-col gap-4">
             <div class="card  shadow-sm border-1 rounded-md p-5 bg-base-100 flex flex-col md:flex-row items-center gap-4 " v-for="(pr, i) in projects">
-                <div class="w-80 relative flex items-center flex-shrink-0 ">
-                    <div class="carousel w-full rounded-md">
-                        <div
-                            v-for="(img, j) in pr.imgs"
-                            class="carousel-item relative w-full" :id="`i${i}-j${j}`"
-                        >
-                            <img :src="img" alt="" />
-                            <div
-                                class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
-                            >
-                                <a
-                                    :href="j < 1 ?`#i${i}-j${pr.imgs.length - 1}` : `#i${i}-j${j - 1}`"
-                                    class="btn btn-circle btn-sm btn-secondary"
-                                    >❮</a
-                                >
-                                <a
-                                    :href="j < pr.imgs.length -1 ? `#i${i}-j${j +1}` : `#i${i}-j${0}`"
-                                    class="btn btn-circle btn-sm btn-secondary"
-                                    >❯</a
-                                >
-                            </div>
-                        </div>
-                    </div>
+                <div class="w-50p max-[600px]:w-full relative flex items-center flex-shrink-0 rounded-md  ">
+                    <Carousel class="w-full" :pictures="pr.imgs.map(img=> {return {
+                        src: img
+                    }})"/>
                 </div>
                 <div class="">
                      <h2 class="font-bold fs-20 text-center">
@@ -56,6 +37,8 @@
 </template>
 
 <script setup lang="ts">
+import {Carousel} from 'flowbite-vue';
+
 type Project = {
     name: string;
     description: string;

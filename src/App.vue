@@ -54,10 +54,14 @@ $color-card: #141414;
     }
 }
 @media (max-width: 768px) {
-    .sec{
+    .sec, .hero{
         .cont{
             width: 100% !important;
         }
+    }
+
+    .hero{
+        padding-top: 65px;
     }
 }
 @media (min-width: 768px) {

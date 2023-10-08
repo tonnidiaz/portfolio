@@ -1,7 +1,7 @@
 <template>
     <div class="hero min-h-screen">
         <div class="hero-content flex-col _content relative" >
-            <div class="w-60p flex gap-10 flex-col md:flex-row items-center m-auto">
+            <div class="w-60p cont flex gap-10 flex-col md:flex-row items-center m-auto">
                  <div class="avatar">
                 <div class="rounded-full w-40 h-40 bg-primary" >
                     <img
@@ -13,8 +13,8 @@
             </div>
 
             <div>
-                <h1 class="text-5xl font-bold">Fullstack developer</h1>
-                <p class="py-6">
+                <h1 class="text-5xl font-bold text-center md:text-left">Fullstack developer</h1>
+                <p class="py-6 text-center md:text-left">
                     Provident cupiditate voluptatem et in. Quaerat fugiat ut
                     assumenda excepturi exercitationem quasi. In deleniti eaque
                     aut repudiandae et a id nisi.
