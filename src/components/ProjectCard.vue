@@ -5,7 +5,7 @@
         <div
             class="w-50p max-[600px]:w-full relative flex items-center flex-shrink-0 rounded-md"
         >
-            <Carousel
+            <!-- <Carousel
                 :slide="false"
                 class="w-full"
                 :pictures="
@@ -15,7 +15,18 @@
                         };
                     })
                 "
-            />
+            /> -->
+            <slider :items-to-show="1" class="h-full _carousel">
+                        <slide v-for="(img, i) in pr.imgs" :key="i" class="relative h-full">
+                            <div class="bg-error h-full">
+                                <img :src="img" alt="" />
+                            </div>
+                        </slide>
+
+                        <template #addons>
+                            <navigation />
+                        </template>
+                    </slider>
             <div class="absolute z-[40] bottom-0 right-0">
                 <button
                     @click="toggleFullscreen"
@@ -29,8 +40,8 @@
             <h2 class="font-bold fs-20 text-center">
                 {{ pr.name }}
             </h2>
-            <div class="mt-4 text-center">
-                <p>{{ pr.description }}</p>
+            <div class="mt-4 text-center" >
+                <div v-html=" pr.description"></div>
                 <div
                     class="mt-6 flex items-center gap-2 justify-center flex-wrap"
                 >
@@ -46,7 +57,7 @@
                         class="btn btn-outline btn-primary btn-sm"
                         :href="pr.url"
                         target="_blank"
-                        >VISIT SITE</a
+                        >{{ pr.linkTxt ?? 'VISIT SITE'}}</a
                     >
                 </div>
             </div>
@@ -54,10 +65,10 @@
         <div
             v-if="fullScreen"
             :id="`pr-${index}-img-modal`"
-            class="tu-modal bg-black bg-opacity-50 flex flex-center sm:p-10 p-2"
+            class="tu-modal bg-black bg-opacity-50 flex flex-center sm:p-10 p-1"
         >
             <div
-                class="cont w-full relative bg-base-100 rounded-lg shadow-lg rounded-lg flex flex-col justify-center items-center"
+                class="cont p-0 w-full relative bg-base-100 rounded-lg shadow-lg rounded-lg flex flex-col justify-center items-center"
             >
             <div class="absolute right-3 top-3 z-[10]">
                     <button
@@ -67,7 +78,7 @@
                         <i class="fi fi-br-cross fs-12"></i>
                     </button>
                 </div>
-                <div class="w-full rounded-lg flex-auto bg-gray-100 relative overflow-hidden p-2 justify-center items-center">
+                <div class="w-full rounded-lg flex-auto bg-gray-100 relative overflow-hidden sm:p-2 p-1 justify-center items-center">
                     <slider :items-to-show="1" class="h-full _carousel">
                         <slide v-for="(img, i) in pr.imgs" :key="i" class="relative h-full">
                             <div class="bg-error h-full">
