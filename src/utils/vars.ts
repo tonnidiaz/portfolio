@@ -16,7 +16,7 @@ The app also offers a minimal admin dashboard for the owner or stuff to: manage 
    `,
         url: "https://tbass.vercel.app/apps/Tukoffee/vlts",
         linkTxt: "Download link",
-        stacks: ["Ionic", "Vue", "TailwindCSS"],
+        stacks: ["Ionic", "Vue", "ExpressJs", "MongoDB", "TailwindCSS"],
         imgs: [
             "/imgs/Tukoffee/1.PNG",
             "/imgs/Tukoffee/2.PNG",
