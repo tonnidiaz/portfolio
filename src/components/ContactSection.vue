@@ -36,7 +36,7 @@ import { Carousel, Button } from 'flowbite-vue'
 
     const contactDetails = {
         email: 'obediencekoza@gmail.com',
-        email2: 'openbytes@yahoo.com',
+        email2: 'tonnidiazed@gmail.com',
         phone: '+27 76 919 6476'
     }
 </script>

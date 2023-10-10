@@ -40,8 +40,8 @@
             <h2 class="font-bold fs-20 text-center">
                 {{ pr.name }}
             </h2>
-            <div class="mt-4 text-center" >
-                <div v-html=" pr.description"></div>
+            <div class="mt-4 text-start" >
+                <div v-html="pr.description" class="fw-5 fs-14"></div>
                 <div
                     class="mt-6 flex items-center gap-2 justify-center flex-wrap"
                 >
