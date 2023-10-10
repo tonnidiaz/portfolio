@@ -1,5 +1,5 @@
 <template>
-    <div
+    <div :id="pr.name"
         class="card shadow-sm border-1 rounded-md p-5 bg-base-100 flex flex-col md:flex-row items-center gap-4"
     >
         <div
